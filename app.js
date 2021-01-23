@@ -18,7 +18,6 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&APPID=5
   main.innerHTML = nameValue;
   desc.innerHTML = "Desc - "+descValue;
   temp.innerHTML = "Temp - "+Math.round(tempValue-273)+'\u00B0'+"C";
-  input.value ="";
 })
 
 .catch(err => alert("Wrong city name!"));
