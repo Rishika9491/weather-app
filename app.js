@@ -3,6 +3,7 @@ var main = document.querySelector('#name');
 var temp = document.querySelector('.temp');
 var desc = document.querySelector('.desc');
 var clouds = document.querySelector('.clouds');
+var pressure = document.querySelector('.pressure');
 var button= document.querySelector('.submit');
 
 
@@ -18,6 +19,7 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&APPID=5
   main.innerHTML = nameValue;
   desc.innerHTML = "Desc - "+descValue;
   temp.innerHTML = "Temp - "+Math.round(tempValue-273)+'\u00B0'+"C";
+  pressure.innerHTML ="Pressure - "+ data['main']['pressure']+"Pa";
 })
 
 .catch(err => alert("Wrong city name!"));
