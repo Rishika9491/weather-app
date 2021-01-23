@@ -9,8 +9,6 @@ body{
   background-image: url('backgrnd4.jpg') ;
   background-size: cover;
   background-position: top center;
-  filter: opacity(50%);
-
 }
 
 .input{
